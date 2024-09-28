@@ -1,0 +1,7 @@
+.elements__element_like-button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border:1px solid red;
+}
+

@@ -1,0 +1,15 @@
+.popup__container_save-button {
+  margin: 10px 0 3px;
+  width: 80%;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  line-height: 21.78px;
+  background-color: #000000;
+}
+
+@media (max-width: 600px) {
+  .popup__container_save-button {
+    margin: 0;
+  }
+}

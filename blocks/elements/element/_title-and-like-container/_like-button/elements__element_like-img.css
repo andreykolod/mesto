@@ -1,0 +1,10 @@
+.elements__element_like-img {
+  background-image: url(/mesto_project/images/Group.svg);
+  width: 22px;
+  height: 19px;
+  transition: background-color 0.5s;
+}
+
+.elements__element_like-img:active {
+  background-image: url(/mesto_project/images/Union.svg);
+}

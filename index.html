@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="fonts" href="./vendor/fonts/inter.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="Место Раша" />
+    </header>
+    <main class="main">
+      <section class="profile">
+        <div class="profile__info">
+          <img
+            class="profile__info_avatar"
+            src="./images/Cousteau_circle.png"
+            alt="Портрет Жак-Ив Кусто в красной шапке"
+          />
+          <div class="profile__info_name-and-desc-container">
+            <div class="profile__info_name-and-button-container">
+              <h1 class="profile__info_name" id="profile-user-name">
+                Жак-Ив Кусто
+              </h1>
+              <button class="button profile__info_edit-button">
+                <div
+                  class="profile__info_edit-button-img"
+                  id="edit-button"
+                ></div>
+              </button>
+            </div>
+            <p class="profile__info_job" id="profile-user-job">
+              Исследователь океана
+            </p>
+          </div>
+        </div>
+        <button class="button profile__add-button">
+          <div class="profile__add-button-img"></div>
+        </button>
+      </section>
+      <section class="elements">
+        <div class="elements__element">
+          <img
+            src="./images/Karachaevsk_big.jpeg"
+            alt="Старая, разрушеная церковь среди гор"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Карачаевск</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+        <div class="elements__element">
+          <img
+            src="./images/GoraEl_big.jpeg"
+            alt="Гора на фоне пустыни"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Гора Эльбрус</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+        <div class="elements__element">
+          <img
+            src="./images/Dombai_big.jpeg"
+            alt="Высокая заснеженая гора на фоне леса"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Домбай</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+        <div class="elements__element">
+          <img
+            src="./images/miamismall.jpg"
+            alt="Пляж с высотками Майами"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Майами</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+        <div class="elements__element">
+          <img
+            src="./images/newyorksmall.jpg"
+            alt="Небоскребы Манхеттена"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Нью-Йорк</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+        <div class="elements__element">
+          <img
+            src="./images/parissmall.jpg"
+            alt="Эйфелева башня"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Париж</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+        <div class="elements__element">
+          <img
+            src="./images/riosmall.jpg"
+            alt="Статуя Иисуса Христа в Рио"
+            class="elements__element_pic"
+          />
+          <div class="elements__element_title-and-like-container">
+            <h2 class="elements__element_header">Рио-Де-Жанейро</h2>
+            <button class="button elements__element_like-button">
+              <div class="elements__element_like-img"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__copyright_container">
+        <p class="footer__copyright_text">2020 Mesto Russia</p>
+      </div>
+    </footer>
+    <section class="popup popup_opened" id="edit-popup">
+      <article class="popup__container">
+        <h3 class="popup__container_header">Редактировать профиль</h3>
+        <div class="popup__container_input-container">
+          <label for="userName" class="popup__container_field-label"
+            >Ваше имя
+          </label>
+          <input
+            type="text"
+            name="userName"
+            value=""
+            class="popup__container_fields"
+            id="edit-user-name"
+            placeholder="Имя"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div class="popup__container_input-container">
+          <label for="userame" class="popup__container_field-label"
+            >Немного о Вас
+          </label>
+          <input
+            type="text"
+            value=""
+            name="user-job"
+            class="popup__container_fields"
+            id="edit-user-job"
+            placeholder="О Вас"
+            maxlength="50"
+          />
+        </div>
+        <button
+          class="button popup__container_save-button"
+          id="save-profile-button"
+        >
+          Сохранить
+        </button>
+        <button
+          class="button popup__close-botton"
+          id="popup-close-button"
+        ></button>
+      </article>
+    </section>
+  </body>
+  <script src="./scripts/script.js"></script>
+</html>
